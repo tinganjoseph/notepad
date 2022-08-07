@@ -14,7 +14,7 @@ app.use(express.json()); //middleware
 app.use(express.urlencoded({ extended: false }));//body urlencoded
 
 app.use('/api/goals', require('./routes/goalRoutes'));
-//app.use('/api/users', require('./routes/userRoutes'));
+app.use('/api/users', require('./routes/userRoutes'));
 
 // Serve frontend
 /* if (process.env.NODE_ENV === 'production') {
